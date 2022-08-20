@@ -1,7 +1,4 @@
-require('./bootstrap');
-
-    window.runCommand = function() {
-
+window.runCommand = function() {
         if($('input[name=command]').val() == ""){
             alert('Please enter command!', 'danger')
             return;
@@ -9,7 +6,7 @@ require('./bootstrap');
        
         $.ajax({
 
-            url : "/process",
+            url : $('.run').attr('data-url'),
             type : "POST",
             headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

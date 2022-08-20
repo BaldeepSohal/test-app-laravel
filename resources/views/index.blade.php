@@ -33,7 +33,7 @@
                             <input type="text" name='command' type="command" class="form-control" id="command">
                         </div>
 
-                        <button onClick='runCommand()' type="button" class="run btn btn-primary" disabled>Submit</button>
+                        <button data-url="{{ url('/process') }}" onClick='runCommand()' type="button" class="run btn btn-primary" disabled>Submit</button>
                     </form>
                 </div>
             </div>
