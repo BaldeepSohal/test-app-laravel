@@ -1,3 +1,3 @@
-## About Test App
+## Laravel Test App
 
-Test app
+A Laravel App demonstrating the use of Solid Principles
